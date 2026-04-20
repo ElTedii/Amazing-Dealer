@@ -1,0 +1,41 @@
+¡Claro! Aquí tienes el .gitignore definitivo y optimizado para Unreal Engine 5.
+
+Pégalo tal cual en un archivo llamado .gitignore (sin extensión .txt) en la carpeta raíz de tu proyecto. Este archivo es el que hará el milagro de que esos 5.2 GB no se suban a GitHub y solo se queden los archivos importantes.
+
+Plaintext
+# --- UNREAL ENGINE ---
+# Ignora las carpetas pesadas que Unreal regenera solo
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+FileOpenOrder/
+
+# --- VISUAL STUDIO / C++ ---
+# Si usan código, esto evita subir archivos basura de compilación
+.vs/
+.vscode/
+*.sln
+*.sdf
+*.suo
+*.opensln
+*.VC.db
+*.VC.opendb
+*.VC.VC.opendb
+
+# --- ARCHIVOS DE USUARIO ---
+# Configuraciones personales que cambian según quién abra el proyecto
+Config/DefaultEditorPerProjectUserSettings.ini
+Config/DefaultEditorSettings.ini
+
+# --- SISTEMA OPERATIVO ---
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# --- OTROS ---
+# Por si acaso alguien mete archivos temporales de edición
+*.tmp
+*.bak
